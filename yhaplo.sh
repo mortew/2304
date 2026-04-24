@@ -1,4 +1,4 @@
-bcftools view -r Y,chrY jews_v.vcf.gz -Ov - \
+bcftools view -r Y,chrY cohort.vcf.gz -Ov - \
   | bcftools norm -m -any -f hg19.no_alt.fa - \
   | bcftools view -f PASS -Oz - \
   | bcftools annotate -h <(echo '##FORMAT=<ID=AD,Number=2,Type=Integer,Description="Allele depths">') -Oz - \
