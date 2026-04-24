@@ -152,7 +152,7 @@ fig.update_layout(
 )
 
 # === 6. СОХРАНЕНИЕ ===
-OUT_HTML = 'populations_grid_final.html'
+OUT_HTML = 'yhaplo_pop.html'
 
 fig.write_html(OUT_HTML, include_plotlyjs='cdn')
 print(f"Файл: {OUT_HTML}")
