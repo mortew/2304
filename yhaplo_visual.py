@@ -114,7 +114,7 @@ for i, pop in enumerate(populations):
     x0, x1 = c * x_step, (c + 1) * x_step
     y0, y1 = 1.0 - (r + 1) * y_step, 1.0 - r * y_step
     
-    margin = 0.03  # ВАШ ОТСТУП
+    margin = 0.03
     domain = {'x': [x0 + margin, x1 - margin], 'y': [y0 + margin, y1 - margin]}
     
     df_pop_males = df_males[df_males['pop'] == pop]
